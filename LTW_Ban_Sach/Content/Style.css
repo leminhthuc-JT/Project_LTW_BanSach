@@ -82,5 +82,22 @@
 }
 
 .dropdown_menu li a:hover {
-    background-color: #e3f2fd;
+    min-width: 150px;
+    border-radius: 5px;
+    background-color: #00385b;
 }
+
+/*Scroll box*/
+.scroll-box{
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+.scroll-box::-webkit-scrollbar{
+    display: none;
+}
+
+
+
