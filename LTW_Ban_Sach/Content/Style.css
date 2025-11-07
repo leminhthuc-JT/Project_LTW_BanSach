@@ -47,6 +47,7 @@
     --bg-color: #e8e8e8;
     --nav-color: #0e0e0e;
 }
+
 /*Dropdown*/
 .dropdown_list{
     position: relative;
@@ -87,6 +88,8 @@
     background-color: #00385b;
 }
 
+
+/*Home User Index*----------------------------------------------------------------------------------------/
 /*Scroll box*/
 .scroll-box{
     overflow: auto;
@@ -99,5 +102,15 @@
     display: none;
 }
 
+.btn-tech {
+    background-image: var(--gradient-tech);
+}
+
+    .btn-tech:hover {
+        background-image: var(--gradient-tech);
+        border: none;
+        box-shadow: 0 1px 100px 1px #cccccc;
+    }
+/*Home Admin Index*----------------------------------------------------------------------------------------*/
 
 
