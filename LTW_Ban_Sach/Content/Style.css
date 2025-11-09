@@ -42,7 +42,8 @@
     --gradient-knowledge: linear-gradient(90deg, #003973, #E5E5BE);
     --gradient-nature: linear-gradient(90deg, #43cea2, #185a9d);
     --gradient-classic: linear-gradient(270deg, #654321, #d9a760);
-    --gradient-tech: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    --gradient-tech: linear-gradient(90deg, rgba(0,77,77,1),rgba(0,77,77,1), rgba(0,25,47, 1),rgba(0,25,47, 1), rgba(10,25,47,1));
+    --gradient-tech-f: linear-gradient(270deg, rgba(0,77,77,1),rgba(0,77,77,1), rgba(0,25,47, 1),rgba(0,25,47, 1), rgba(10,25,47,1));
     /*linh ta linh tinh khác*/
     --bg-color: #e8e8e8;
     --nav-color: #0e0e0e;
@@ -89,7 +90,7 @@
 }
 
 
-/*Home User Index*----------------------------------------------------------------------------------------/
+/*Home User Index----------------------------------------------------------------------------------------*/
 /*Scroll box*/
 .scroll-box{
     overflow: auto;
@@ -103,14 +104,28 @@
 }
 
 .btn-tech {
-    background-image: var(--gradient-tech);
+    font-weight: 350;
+    color: white;
+    transform: translate(80px, 130px);
+    width: 200px;
+    background-image: linear-gradient(90deg,rgba(0,77,77,1), rgba(0,75,77,1));
+    line-height: 40px;
+    font-size: 20px;
+    box-shadow: 0 4px 0 #003838, 0 6px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+}
+.btn-tech:hover {
+    color: white;
 }
 
-    .btn-tech:hover {
-        background-image: var(--gradient-tech);
-        border: none;
-        box-shadow: 0 1px 100px 1px #cccccc;
-    }
+.btn-tech:active {
+    color: rgba(0,25,47, 1);
+    box-shadow: 0 1px 0 #003838;
+}
+
+.items:hover {
+    transform: scale(1.05);
+}
 /*Home Admin Index*----------------------------------------------------------------------------------------*/
 
 

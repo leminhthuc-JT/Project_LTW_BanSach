@@ -7,31 +7,28 @@
 
 <!--Banner Img-->
 <div style="margin-top: 50px; 
-            background: linear-gradient(90deg,rgba(10,25,47,0.9), rgba(0,77,77,0.7)), url('https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg'); 
+            background: linear-gradient(90deg,rgba(10,25,47,0.9), rgba(0,77,77,0.6), rgba(0,77,77,0.1)), url('/Content/Image/banner.png');
             height: 400px; 
             background-size: cover; 
             background-position: center">
-    <div style="height: 700px;" 
+    <div style="height: 700px;"
          class="container">
         <h2 style=" font-weight: 500;
-                    color: white; 
+                    color: white;
                     transform:translate(50px, 120px)">
             KHÁM PHÁ THẾ GIỚI SÁCH<br />CÙNG BOOK STORE
         </h2>
-        <button type="button" 
-                class="btn btn-tech" 
-                style=" font-weight: 350; 
-                        color: white; 
-                        transform:translate(50px, 140px);
-                        width: 400px;
-                        line-height: 40px;
-                        font-size:20px;">
-            XEM NGAY ...!
+        <p style=" font-weight: 300;
+                    color: white;
+                    transform:translate(90px, 120px)"><i>“Đọc sách – Mở ra thế giới”</i></p>
+        <button type="button"
+                class="btn btn-tech">
+            XEM NGAY
         </button>
     </div>
 </div>
 <div style="margin-top: 50px; 
-            background-image: var(--gradient-tech); 
+            background-image: linear-gradient(90deg,rgba(10,25,47,1), rgba(0,25,47,1)); 
             height: 30px; 
             background-size: cover; 
             margin: 0; 
@@ -100,8 +97,8 @@
         </div>
     </div>
     <!--Sale-->
-    <div class="">
-        <div class="d-flex justify-content-between" style=" background-image: var(--gradient-tech); height: 50px; border-radius: 10px; margin: 20px 0; padding: 0 70px;">
+    <div>
+        <div class="d-flex justify-content-between" style=" background-image: var(--gradient-tech); height: 50px; border-radius: 10px; margin-top: 20px; padding: 0 70px;">
             <h3 style="color: white; width: 100px; line-height: 50px;">
                 SALE
             </h3>
@@ -110,97 +107,113 @@
                 11.11
             </h3>
         </div>
-        <div class="d-flex overflow-auto flex-nowrap scroll-box" style="width: 100%; height: auto;">
-            <!--1: Kình ngư-->
-            <div class="d-flex">
-                <div class="position-relative">
-                    <div class="position-absolute" style="width: 50px; line-height:30px; background-color: var(--red-color); border-radius: 10px 0 10px 0; color: white; text-align: center">
-                        20%
+        <div id="scroll_auto_box">
+            <div class="d-flex overflow-auto flex-nowrap scroll-box " style="width: calc(100% - 20px); height: 340px;padding: 20px;" id="scroll-auto-content">
+                @for (int i = 0; i < 10; i++)
+                {
+                    <!--1: Kình ngư-->
+                    <div class="d-flex items">
+                        <div class="position-relative"
+                             style="width: 200px;
+                                    height: 300px;
+                                    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(10,25,47,0.7), rgba(10,25,47,0.9), rgba(10,25,47,1)), url('https://cdn1.fahasa.com/media/catalog/product/b/i/bia-2d_ho-diep-va-kinh-ngu_17307_1.jpg?_gl=1*1f723xq*_ga*MTk2Mjg3NTIyMi4xNzYxNDkwOTM2*_ga_D3YYPWQ9LN*czE3NjI0NDMzODYkbzMkZzEkdDE3NjI0NDQ2OTkkajUxJGwwJGgw*_gcl_au*MTUyNDc3NTA4MC4xNzYxNDkwOTM1*_ga_460L9JMC2G*czE3NjI0NDExMTckbzIkZzEkdDE3NjI0NDQ3MDIkajQ4JGwwJGgxNTcxMjYxNDk5');
+                                    border-radius: 10px;
+                                    margin-right: 20px;
+                                    background-size: cover;">
+                            <div class="position-absolute" style="width: 50px; line-height:30px; background-color: var(--red-color); border-radius: 10px 0 10px 0; color: white; text-align: center">
+                                20%
+                            </div>
+                            <p style="color: white; text-align:center; font-weight: 700; margin-top: 220px">
+                                Hồ Điệp và Kình Ngư
+                            </p>
+                            <p style="color: red; text-align: center; margin-top: -10px">100.000 VND</p>
+                        </div>
                     </div>
-                    <img style="width: 200px; height: 300px; border-radius: 10px; margin-right: 20px"
-                         src="https://cdn1.fahasa.com/media/catalog/product/b/i/bia-2d_ho-diep-va-kinh-ngu_17307_1.jpg?_gl=1*1f723xq*_ga*MTk2Mjg3NTIyMi4xNzYxNDkwOTM2*_ga_D3YYPWQ9LN*czE3NjI0NDMzODYkbzMkZzEkdDE3NjI0NDQ2OTkkajUxJGwwJGgw*_gcl_au*MTUyNDc3NTA4MC4xNzYxNDkwOTM1*_ga_460L9JMC2G*czE3NjI0NDExMTckbzIkZzEkdDE3NjI0NDQ3MDIkajQ4JGwwJGgxNTcxMjYxNDk5" />
-                </div>
-            </div>
-            <!--2: -->
-            <div class="d-flex">
-                <div class="position-relative">
-                    <div class="position-absolute" style="width: 50px; line-height:30px; background-color: var(--red-color); border-radius: 10px 0 10px 0; color: white; text-align: center">
-                        20%
-                    </div>
-                    <img style="width: 200px; height: 300px; border-radius: 10px; margin-right: 20px"
-                         src="https://cdn1.fahasa.com/media/catalog/product/b/i/bia-2d_ho-diep-va-kinh-ngu_17307_1.jpg?_gl=1*1f723xq*_ga*MTk2Mjg3NTIyMi4xNzYxNDkwOTM2*_ga_D3YYPWQ9LN*czE3NjI0NDMzODYkbzMkZzEkdDE3NjI0NDQ2OTkkajUxJGwwJGgw*_gcl_au*MTUyNDc3NTA4MC4xNzYxNDkwOTM1*_ga_460L9JMC2G*czE3NjI0NDExMTckbzIkZzEkdDE3NjI0NDQ3MDIkajQ4JGwwJGgxNTcxMjYxNDk5" />
-                </div>
-            </div>
-            <!--3: -->
-            <div class="d-flex">
-                <div class="position-relative">
-                    <div class="position-absolute" style="width: 50px; line-height:30px; background-color: var(--red-color); border-radius: 10px 0 10px 0; color: white; text-align: center">
-                        20%
-                    </div>
-                    <img style="width: 200px; height: 300px; border-radius: 10px; margin-right: 20px"
-                         src="https://cdn1.fahasa.com/media/catalog/product/b/i/bia-2d_ho-diep-va-kinh-ngu_17307_1.jpg?_gl=1*1f723xq*_ga*MTk2Mjg3NTIyMi4xNzYxNDkwOTM2*_ga_D3YYPWQ9LN*czE3NjI0NDMzODYkbzMkZzEkdDE3NjI0NDQ2OTkkajUxJGwwJGgw*_gcl_au*MTUyNDc3NTA4MC4xNzYxNDkwOTM1*_ga_460L9JMC2G*czE3NjI0NDExMTckbzIkZzEkdDE3NjI0NDQ3MDIkajQ4JGwwJGgxNTcxMjYxNDk5" />
-                </div>
-            </div>
-            <!--4: -->
-            <div class="d-flex">
-                <div class="position-relative">
-                    <div class="position-absolute" style="width: 50px; line-height:30px; background-color: var(--red-color); border-radius: 10px 0 10px 0; color: white; text-align: center">
-                        20%
-                    </div>
-                    <img style="width: 200px; height: 300px; border-radius: 10px; margin-right: 20px"
-                         src="https://cdn1.fahasa.com/media/catalog/product/b/i/bia-2d_ho-diep-va-kinh-ngu_17307_1.jpg?_gl=1*1f723xq*_ga*MTk2Mjg3NTIyMi4xNzYxNDkwOTM2*_ga_D3YYPWQ9LN*czE3NjI0NDMzODYkbzMkZzEkdDE3NjI0NDQ2OTkkajUxJGwwJGgw*_gcl_au*MTUyNDc3NTA4MC4xNzYxNDkwOTM1*_ga_460L9JMC2G*czE3NjI0NDExMTckbzIkZzEkdDE3NjI0NDQ3MDIkajQ4JGwwJGgxNTcxMjYxNDk5" />
-                </div>
-            </div>
-            <!--5: -->
-            <div class="d-flex">
-                <div class="position-relative">
-                    <div class="position-absolute" style="width: 50px; line-height:30px; background-color: var(--red-color); border-radius: 10px 0 10px 0; color: white; text-align: center">
-                        20%
-                    </div>
-                    <img style="width: 200px; height: 300px; border-radius: 10px; margin-right: 20px"
-                         src="https://cdn1.fahasa.com/media/catalog/product/b/i/bia-2d_ho-diep-va-kinh-ngu_17307_1.jpg?_gl=1*1f723xq*_ga*MTk2Mjg3NTIyMi4xNzYxNDkwOTM2*_ga_D3YYPWQ9LN*czE3NjI0NDMzODYkbzMkZzEkdDE3NjI0NDQ2OTkkajUxJGwwJGgw*_gcl_au*MTUyNDc3NTA4MC4xNzYxNDkwOTM1*_ga_460L9JMC2G*czE3NjI0NDExMTckbzIkZzEkdDE3NjI0NDQ3MDIkajQ4JGwwJGgxNTcxMjYxNDk5" />
-                </div>
-            </div>
-            <!--6: -->
-            <div class="d-flex">
-                <div class="position-relative">
-                    <div class="position-absolute" style="width: 50px; line-height:30px; background-color: var(--red-color); border-radius: 10px 0 10px 0; color: white; text-align: center">
-                        20%
-                    </div>
-                    <img style="width: 200px; height: 300px; border-radius: 10px; margin-right: 20px"
-                         src="https://cdn1.fahasa.com/media/catalog/product/b/i/bia-2d_ho-diep-va-kinh-ngu_17307_1.jpg?_gl=1*1f723xq*_ga*MTk2Mjg3NTIyMi4xNzYxNDkwOTM2*_ga_D3YYPWQ9LN*czE3NjI0NDMzODYkbzMkZzEkdDE3NjI0NDQ2OTkkajUxJGwwJGgw*_gcl_au*MTUyNDc3NTA4MC4xNzYxNDkwOTM1*_ga_460L9JMC2G*czE3NjI0NDExMTckbzIkZzEkdDE3NjI0NDQ3MDIkajQ4JGwwJGgxNTcxMjYxNDk5" />
-                </div>
-            </div>
-            <!--7: -->
-            <div class="d-flex">
-                <div class="position-relative">
-                    <div class="position-absolute" style="width: 50px; line-height:30px; background-color: var(--red-color); border-radius: 10px 0 10px 0; color: white; text-align: center">
-                        20%
-                    </div>
-                    <img style="width: 200px; height: 300px; border-radius: 10px; margin-right: 20px"
-                         src="https://cdn1.fahasa.com/media/catalog/product/b/i/bia-2d_ho-diep-va-kinh-ngu_17307_1.jpg?_gl=1*1f723xq*_ga*MTk2Mjg3NTIyMi4xNzYxNDkwOTM2*_ga_D3YYPWQ9LN*czE3NjI0NDMzODYkbzMkZzEkdDE3NjI0NDQ2OTkkajUxJGwwJGgw*_gcl_au*MTUyNDc3NTA4MC4xNzYxNDkwOTM1*_ga_460L9JMC2G*czE3NjI0NDExMTckbzIkZzEkdDE3NjI0NDQ3MDIkajQ4JGwwJGgxNTcxMjYxNDk5" />
-                </div>
+                }
             </div>
         </div>
     </div>
-    <div class="d-flex" style="width: 100%; padding: 20px;">
-        <div style="background-image: var(--gradient-tech); border-radius: 10px; width: 400px; height: 50px;">
-            <h2 style="text-align: center; color: white; line-height: 50px;">NEW PRODUCTS</h2>
+    <!--Sản phầm mới-->
+    <div style="padding: 20px;
+                width: 100%;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4)"
+         class="mb-4">
+        <div class="d-flex" style="width: 100%;">
+            <div style="background-image: var(--gradient-tech-f); border-radius: 10px; width: 400px; height: 50px;">
+                <h2 style="text-align: center; color: white; line-height: 50px;">NEW PRODUCTS</h2>
+            </div>
+            <hr style="width: calc(100% - 400px); margin-top:25px;" />
+        </div>
+        <div class="row row-cols-5 row-gap-4 mt-4 align-items-center">
+            @for (int i = 0; i < 10; i++)
+            {
+                <!--Kình ngư-->
+                <div class="items">
+                    <div class="position-relative"
+                         style="width: 100%;
+                        height: 380px;
+                        margin-right: 20px;
+                        background-color: white;
+                        border-radius: 10px;
+                        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4)">
+                        <img style="width: 100%; height: 280px; border-radius: 10px 10px 0 0;" src="https://cdn1.fahasa.com/media/flashmagazine/images/page_images/nha_gia_kim_tai_ban_2020/2024_03_20_18_29_19_1-390x510.jpg?_gl=1*4pep3g*_ga*MTk2Mjg3NTIyMi4xNzYxNDkwOTM2*_ga_D3YYPWQ9LN*czE3NjI3MDUwMTAkbzEwJGcxJHQxNzYyNzA1MzE0JGo1NiRsMCRoMA..*_gcl_au*MTUyNDc3NTA4MC4xNzYxNDkwOTM1*_ga_460L9JMC2G*czE3NjI3MDUwMTAkbzkkZzEkdDE3NjI3MDUzMTUkajU1JGwwJGg5MzQzMTU1NjY." />
+                        <p style="color: rgba(10,25,47,0.9); text-align:center; font-weight: 500; font-size: 18px; margin-top: 10px;">
+                            Nhà Giả Kim
+                        </p>
+                        <p style="color: red; text-align: center; margin-top: -10px">100.000 VND</p>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+    <div style="padding: 20px;
+                width: 100%;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4)"
+         class="mb-4">
+        <!--Sách nổi bật-->
+        <div class="d-flex" style="width: 100%; ">
+
+            <hr style="width: calc(100% - 400px); margin-top:25px;" />
+            <div style="background-image: var(--gradient-tech); border-radius: 10px; width: 400px; height: 50px;">
+                <h2 style="text-align: center; color: white; line-height: 50px;">HOT OF DAY</h2>
+            </div>
+        </div>
+        <div class="row row-cols-5 row-gap-4 mt-4 align-items-center">
+            @for (int i = 0; i < 10; i++)
+            {
+                <!--Kình ngư-->
+                <div class="items">
+                    <div class="position-relative"
+                         style="width: 100%;
+                                height: 380px;
+                                margin-right: 20px;
+                                background-color: white;
+                                border-radius: 10px;
+                                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4)">
+                        <img style="width: 100%; height: 280px; border-radius: 10px 10px 0 0;" src="https://cdn1.fahasa.com/media/flashmagazine/images/page_images/nha_gia_kim_tai_ban_2020/2024_03_20_18_29_19_1-390x510.jpg?_gl=1*4pep3g*_ga*MTk2Mjg3NTIyMi4xNzYxNDkwOTM2*_ga_D3YYPWQ9LN*czE3NjI3MDUwMTAkbzEwJGcxJHQxNzYyNzA1MzE0JGo1NiRsMCRoMA..*_gcl_au*MTUyNDc3NTA4MC4xNzYxNDkwOTM1*_ga_460L9JMC2G*czE3NjI3MDUwMTAkbzkkZzEkdDE3NjI3MDUzMTUkajU1JGwwJGg5MzQzMTU1NjY." />
+                        <p style="color: rgba(10,25,47,0.9); text-align:center; font-weight: 500; font-size: 18px; margin-top: 10px;">
+                            Nhà Giả Kim
+                        </p>
+                        <p style="color: red; text-align: center; margin-top: -10px">100.000 VND</p>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+    
+    <!--Sự kiện-->
+    <!--<div class="d-flex" style="width: 100%; padding: 20px;">
+        <div style="background-image: var(--gradient-tech-f); border-radius: 10px; width: 400px; height: 50px;">
+            <h2 style="text-align: center; color: white; line-height: 50px;">EVENTS</h2>
         </div>
         <hr style="width: calc(100% - 440px); margin-top:25px;" />
-    </div>
-    <div class="d-flex" style="width: 100%; padding: 20px;">
-        <div style="background-image: var(--gradient-tech); border-radius: 10px; width: 400px; height: 50px;">
-            <h2 style="text-align: center; color: white; line-height: 50px;">NEW PRODUCTS</h2>
-        </div>
-        <hr style="width: calc(100% - 440px); margin-top:25px;" />
-    </div>
-    <div class="d-flex" style="width: 100%; padding: 20px;">
-        <div style="background-image: var(--gradient-tech); border-radius: 10px; width: 400px; height: 50px;">
-            <h2 style="text-align: center; color: white; line-height: 50px;">NEW PRODUCTS</h2>
-        </div>
-        <hr style="width: calc(100% - 440px); margin-top:25px;" />
-    </div>
+    </div>-->
 </div>
 
 
