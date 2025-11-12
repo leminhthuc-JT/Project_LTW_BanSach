@@ -9,7 +9,7 @@ namespace LTW_Ban_Sach.Models
     public class Categories
     {
         [Key]
-        public int CateId { get; set; }
+        public string CateId { get; set; }
         public string CateName { get; set; }
         public virtual ICollection<Books> Books { get; set; }
     }

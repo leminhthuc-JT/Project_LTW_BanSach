@@ -26,4 +26,7 @@ namespace LTW_Ban_Sach.Controllers
     //3. install-package entityframework
     //4. install-package microsoft.aspnet.webapi
     //5. install-package microsoft.aspnet.webapi.cors
+    //6. enable-migrations
+    //7. add-migration "InitialCreate"
+    //8. update-database
 }
