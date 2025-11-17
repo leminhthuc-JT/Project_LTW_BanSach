@@ -10,7 +10,7 @@ namespace LTW_Ban_Sach.Models
     public class DetailBills
     {
         [Key, Column(Order = 0)]
-        public string BillId { get; set; }
+        public int BillId { get; set; }
         [Key, Column(Order = 1)]
         public string BookId { get; set; }
         public int Quantity { get; set; }

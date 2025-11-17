@@ -1,0 +1,18 @@
+﻿namespace LTW_Ban_Sach.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class TranslateDataType : DbMigration
+    {
+        public override void Up()
+        {
+            AlterColumn("dbo.Books", "PublicationYear", c => c.DateTime(nullable: false));
+        }
+        
+        public override void Down()
+        {
+            AlterColumn("dbo.Books", "PublicationYear", c => c.Int(nullable: false));
+        }
+    }
+}

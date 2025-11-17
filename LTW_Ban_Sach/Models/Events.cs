@@ -9,7 +9,7 @@ namespace LTW_Ban_Sach.Models
     public class Events
     {
         [Key]
-        public string EventId { get; set; }
+        public int EventId { get; set; }
         public string EventName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

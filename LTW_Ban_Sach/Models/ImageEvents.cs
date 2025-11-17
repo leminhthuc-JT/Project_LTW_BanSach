@@ -10,7 +10,7 @@ namespace LTW_Ban_Sach.Models
     public class ImageEvents
     {
         [Key, Column(Order = 0)]
-        public string EventId { get; set; }
+        public int EventId { get; set; }
         [Key, Column(Order = 1)]
         public string ImageEvent { get; set; }
         public string Description { get; set; }

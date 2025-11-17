@@ -1,9 +1,10 @@
-﻿using System;
+﻿using LTW_Ban_Sach.Identity;
+using LTW_Ban_Sach.Models;  
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using LTW_Ban_Sach.Models;  
 
 namespace LTW_Ban_Sach.Controllers
 {
@@ -15,6 +16,12 @@ namespace LTW_Ban_Sach.Controllers
         {
             List<Books> bs = db.Books.ToList();
             return View(bs);
+        }
+        public ActionResult ProFile(string Name = "")
+        {
+            AppDbContext profile = new AppDbContext();
+            AppUser user = profile.Users.SingleOrDefault(r => r.UserName == Name);
+            return View(user);
         }
     }
 

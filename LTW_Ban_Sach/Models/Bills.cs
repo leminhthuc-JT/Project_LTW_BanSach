@@ -10,13 +10,11 @@ namespace LTW_Ban_Sach.Models
     public class Bills
     {
         [Key]
-        public string BillId { get; set; }
+        public int BillId { get; set; }
         public DateTime CreateDate { get; set; }
-        public string AccountId { get; set; }
         public decimal TotalAmount { get; set; }
-        public string VoucherId { get; set; }
+        public int VoucherId { get; set; }
         public virtual ICollection<DetailBills> DetailBills { get; set; }
-        public virtual Accounts Accounts { get; set; }
         public virtual Vouchers Vouchers { get; set; }
     }
 }

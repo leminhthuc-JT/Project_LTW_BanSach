@@ -11,9 +11,11 @@ namespace LTW_Ban_Sach.Models
         public DBContext() : base("MyConnectionString") { }
         public DbSet<Books> Books { get; set; }
         public DbSet<Categories> Categories { get; set; }
-        public DbSet<Accounts> Accounts { get; set; }
         public DbSet<Bills> Bills { get; set; }
         public DbSet<DetailBills> DetailBills { get; set; }
-
+        public DbSet<ImagesBook> ImagesBooks { get; set; }
+        public DbSet<Events> Events { get; set; }
+        public DbSet<ImageEvents> ImageEvents { get; set; }
+        public DbSet<Vouchers> Vouchers { get; set; }
     }
 }
