@@ -265,6 +265,7 @@
     <Compile Include="Models\Vouchers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\ChangePassword.cs" />
     <Compile Include="ViewModel\Login.cs" />
     <Compile Include="ViewModel\Register.cs" />
   </ItemGroup>
@@ -312,6 +313,7 @@
     <Content Include="Views\Paying\Index.cshtml" />
     <Content Include="Views\Account\EditProfile.cshtml" />
     <Content Include="Views\Account\ProFile.cshtml" />
+    <Content Include="Views\Account\ChangePassWord.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -44,8 +44,9 @@ namespace LTW_Ban_Sach.Controllers
                 return RedirectToAction("Login", "Account");
 
             }
-            else { 
-                return View(); 
+            else
+            {
+                return View();
             }
         }
         public ActionResult Login()
@@ -102,7 +103,7 @@ namespace LTW_Ban_Sach.Controllers
             return View(user);
         }
 
-        public ActionResult EditProfile( string userId = "")
+        public ActionResult EditProfile(string userId = "")
         {
             ViewBag.PreUrl = Request.UrlReferrer?.ToString();
             AppDbContext profile = new AppDbContext();
@@ -127,6 +128,41 @@ namespace LTW_Ban_Sach.Controllers
             profile.SaveChanges();
 
             return Redirect(preURL);
+        }
+
+        public ActionResult ChangePassWord(string userId = "")
+        {
+            ViewBag.UserId = userId;
+            return View();
+        }
+        [HttpPost]
+        public ActionResult ChangePassWord(ChangePassword cpw, string userId = "")
+        {
+            if (ModelState.IsValid)
+            {
+                userId = User.Identity.GetUserId();
+                var appDBContext = new AppDbContext();
+                var userStore = new AppUserStore(appDBContext);
+                var userManager = new AppUserManager(userStore);
+                var user = userManager.FindById(userId);
+                if (user != null)
+                {
+                    if (userManager.CheckPassword(user, cpw.PasswordOld))
+                    {
+
+                        var passHash = Crypto.HashPassword(cpw.PasswordNew);
+                        user.PasswordHash = passHash;
+                        userManager.Update(user);
+                        return RedirectToAction("Login", "Account");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("PasswordOld", "Mật khẩu không đúng.");
+                        return View();
+                    }
+                }
+            }
+            return View();
         }
     }
 }
