@@ -92,11 +92,11 @@ namespace LTW_Ban_Sach.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Edit(AppUser model)
         {
-            var user = db.Users.Find(model.Id);
+            var user = db.Users.Where(x => x.Id == model.Id).FirstOrDefault();
 
             user.Address = model.Address;
             user.Email = model.Email;
-            user.UserName = model.Email;
+            user.UserName = model.UserName;
             user.PhoneNumber = model.PhoneNumber;
             user.Avatar = model.Avatar;
 

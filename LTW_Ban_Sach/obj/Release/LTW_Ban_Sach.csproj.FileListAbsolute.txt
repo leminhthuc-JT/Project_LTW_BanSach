@@ -128,3 +128,5 @@ D:\Web Design\LTW_Ban_Sach\LTW_Ban_Sach\obj\Release\LTW_Ban_Sach.csproj.CoreComp
 D:\Web Design\LTW_Ban_Sach\LTW_Ban_Sach\obj\Release\LTW_Ban_.4CD17E78.Up2Date
 D:\Web Design\LTW_Ban_Sach\LTW_Ban_Sach\obj\Release\LTW_Ban_Sach.dll
 D:\Web Design\LTW_Ban_Sach\LTW_Ban_Sach\obj\Release\LTW_Ban_Sach.pdb
+D:\Web Design\LTW_Ban_Sach\LTW_Ban_Sach\obj\Release\LTW_Ban_Sach.Migrations.MakeVoucherNullable.resources
+D:\Web Design\LTW_Ban_Sach\LTW_Ban_Sach\obj\Release\LTW_Ban_Sach.Migrations.AddPaymentMethod.resources
